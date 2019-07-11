@@ -1,14 +1,11 @@
-package com.login.demo.service;
+package com.login.demo.dao;
 
 import java.util.List;
-import java.util.Map;
 
 import com.login.demo.model.User;
 
-public interface TestDemoService {
+public interface UserDao {
 
-	public Map<String,Object> login();
-	
 	public List<User> findUsers();
 	
 	public User findUser(Long id);
@@ -16,4 +13,5 @@ public interface TestDemoService {
 	public void removeUser(Long id);
 	
 	public void saveOrUpdateUser(User user);
+	
 }
